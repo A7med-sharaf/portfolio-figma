@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- start header -->
+     <header>
+        <h1><a href="#"> logo</a></h1>
+
+        <ul class="navbar">
+            <li><a href="#home" id="home">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="icon" id="icon-inside"><i  class="fa-solid fa-bars"></i></div>
+
+    </header>
+    <!-- end  header -->
+
+    <!-- start section two -->
+
+    <section id="HOME">
+        <div class="box-big">
+            <div class="box-big-title">
+                <p>Web Development | Front-end Development</p>
+                <h1>Ahmed Saber,  Front-end Developer</h1>
+            </div>
+
+            <img class="box-big-img" src="./images/Curious-bro 1.jpg" alt="">
+        </div>
+    </section>
+    <!-- end section two -->
+
+
+    <!-- start section three -->
+    <section id="SERVICES">
+        <div class="SERVICES-content">
+            <div class="SERVICES-content-card">
+                <img class="SERVICES-content-card-img"  src="./images/e7c789943e5fbd16d335cbaa65fdfff0.png" alt="">
+                <h1 class="SERVICES-content-card-h1">UI Development</h1>
+                <p class="SERVICES-content-card-p">nunc pulvinar sapien et ligula ullamcorper malesuada proin libero nunc</p>
+            </div>
+
+
+            <div class="SERVICES-content-card">
+                <img class="SERVICES-content-card-img"  src="./images/e7c789943e5fbd16d335cbaa65fdfff0.png" alt="">
+                <h1 class="SERVICES-content-card-h1">Web Development</h1>
+                <p class="SERVICES-content-card-p">nunc pulvinar sapien et ligula ullamcorper malesuada proin libero nunc</p>
+            </div>
+
+
+
+            <div class="SERVICES-content-card">
+                <img class="SERVICES-content-card-img"  src="./images/e7c789943e5fbd16d335cbaa65fdfff0.png" alt="">
+                <h1 class="SERVICES-content-card-h1">Figma To Website</h1>
+                <p class="SERVICES-content-card-p">nunc pulvinar sapien et ligula ullamcorper malesuada proin libero nunc</p>
+            </div>
+        </div>
+
+    </section>
+    
+    <!-- end section three -->
+
+    <!-- start section four -->
+     <section></section>
+    <!-- end section four -->
+</body>
+<script>
+   let menu=document.querySelector('#icon-inside')
+    let navbar=document.querySelector('.navbar')
+
+menu.addEventListener("click",()=> {
+
+    
+    // alert("test")
+    menu.classList.toggle('icon-inside');
+    navbar.classList.toggle('active');
+    
+})
+
+window.onscroll=() =>{
+    menu.classList.remove('icon-inside');
+    navbar.classList.remove('active');
+    
+
+}
+        
+    
+</script>
+</html>
